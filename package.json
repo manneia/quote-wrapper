@@ -2,7 +2,7 @@
 	"name": "quote-wrapper",
 	"displayName": "Quote Wrapper",
 	"description": "为选中文本的每一行添加单引号",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
