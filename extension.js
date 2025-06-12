@@ -51,7 +51,25 @@ function activate (context) {
 /**
  * 当插件被停用时调用
  */
-function deactivate () { }
+function deactivate () {
+    // 清理订阅的事件
+    vscode.Disposable.from(...context.subscriptions).dispose();
+    
+    // 清理状态栏项目
+    if (statusBarItem) {
+        statusBarItem.dispose();
+    }
+    
+    // 显示停用消息
+    console.log('插件 "quote-wrapper" 已停用');
+    
+    // 清理可能存在的临时文件或缓存
+    try {
+        // TODO: 添加具体的清理逻辑
+    } catch (error) {
+        console.error('插件停用时清理出错:', error);
+    }
+}
 
 module.exports = {
 	activate,
