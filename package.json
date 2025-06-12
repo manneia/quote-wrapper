@@ -8,8 +8,8 @@
 	},
 	"publisher": "manneia",
 	"repository": {
-		"type": "github",
-		"url": "https://github.com/manneia/quote-wrapper.git"
+		"type": "git",
+		"url": "git@github.com:manneia/quote-wrapper.git"
 	},
 	"categories": [
 		"Other"
